@@ -1,0 +1,24 @@
+{
+  "name": "desafio-estagio-reverse-proxy",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Simple Reverse Proxy",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/victoralvess/desafio-estagio-reverse-proxy.git"
+  },
+  "keywords": [
+    "reverse-proxy",
+    "desafio-estagio"
+  ],
+  "author": "Victor Alves <vsilva.programador@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/victoralvess/desafio-estagio-reverse-proxy/issues"
+  },
+  "homepage": "https://github.com/victoralvess/desafio-estagio-reverse-proxy"
+}
