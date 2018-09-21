@@ -6,7 +6,7 @@ const app = express();
 
 const corsWhitelist = [
   'http://localhost:3000',
-  'https://victoralvess.github.io/desafio-estagio/'
+  'https://victoralvess.github.io'
 ];
 
 app.use(
