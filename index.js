@@ -4,9 +4,20 @@ const cors = require("cors");
 
 const app = express();
 
+const corsWhitelist = [
+  'http://localhost:3000',
+  'https://victoralvess.github.io/desafio-estagio/'
+];
+
 app.use(
   cors({
-    origin: 'https://victoralvess.github.io/desafio-estagio/',
+    origin: (origin, cb) => {
+      if (corsWhitelist.indexOf(origin) !== -1) {
+        cb(null, true);
+      } else {
+        cb(new Error('Not Allowed'));
+      }
+    },
     optionsSuccessStatus: 200
   })
 );
