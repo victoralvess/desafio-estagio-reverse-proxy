@@ -4,6 +4,9 @@
   "private": true,
   "description": "Simple Reverse Proxy",
   "main": "index.js",
+  "now": {
+    "alias": "desafio-estagio"
+  },
   "scripts": {
     "start": "node index.js"
   },
