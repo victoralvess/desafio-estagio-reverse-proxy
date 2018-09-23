@@ -8,7 +8,7 @@ before_deploy:
   - npm install now --no-save
 deploy:
   - provider: script
-    script: now --token $NOW_TOKEN --public && now alias --token $NOW_TOKEN
+    script: now --token $NOW_TOKEN --public && now alias --token $NOW_TOKEN && now scale desafio-estagio.now.sh 1 1
     skip_cleanup: true
     on:
       master: true
