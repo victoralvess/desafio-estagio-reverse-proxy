@@ -8,8 +8,8 @@
     "alias": "desafio-estagio"
   },
   "scripts": {
-    "now-start": "exit 0",
-    "start": "pm2 start index.js",    
+    "now-start": "node index.js",
+    "start": "PORT=3002 pm2 start index.js",    
     "restart": "pm2 restart all"
   },
   "repository": {
