@@ -13,4 +13,4 @@ deploy:
     on:
       master: true
 after_deploy:
-  - pm2 start index.js
+  - npm start

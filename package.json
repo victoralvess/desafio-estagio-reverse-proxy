@@ -7,6 +7,11 @@
   "now": {
     "alias": "desafio-estagio"
   },
+  "scripts": {
+    "now-start": "exit 0",
+    "start": "pm2 start index.js",    
+    "restart": "pm2 restart all"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/victoralvess/desafio-estagio-reverse-proxy.git"
