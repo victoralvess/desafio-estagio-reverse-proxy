@@ -8,7 +8,7 @@
     "alias": "desafio-estagio"
   },
   "scripts": {
-    "start": "node index.js"
+    "start": "pm2 start index.js"
   },
   "repository": {
     "type": "git",
@@ -25,7 +25,9 @@
   },
   "homepage": "https://github.com/victoralvess/desafio-estagio-reverse-proxy",
   "dependencies": {
+    "compression": "^1.7.3",
     "cors": "^2.8.4",
-    "express": "^4.16.3"
+    "express": "^4.16.3",
+    "helmet": "^3.13.0"
   }
 }

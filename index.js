@@ -1,14 +1,18 @@
 const http = require('http');
 const express = require("express");
 const cors = require("cors");
+const helmet = require('helmet');
+const compression = require('compression')
 
 const app = express();
 
-const corsWhitelist = [
-  'http://localhost:3000',
-  'https://desafio-estagio.now.sh',
+let corsWhitelist = [  
   'https://victoralvess.github.io'
 ];
+
+if (process.env.NODE_ENV === 'development') {
+  corsWhitelist.push('http://localhost:3000');
+}
 
 app.use(
   cors({
@@ -22,6 +26,10 @@ app.use(
     optionsSuccessStatus: 200
   })
 );
+
+app.use(helmet());
+
+app.use(compression());
 
 /**
  * Makes a request to the actual '/api/v1/states' endpoint.
