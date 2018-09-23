@@ -12,5 +12,3 @@ deploy:
     skip_cleanup: true
     on:
       master: true
-after_deploy:
-  - npm start

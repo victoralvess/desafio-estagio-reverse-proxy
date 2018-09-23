@@ -6,13 +6,10 @@ const compression = require('compression')
 
 const app = express();
 
-let corsWhitelist = [  
+let corsWhitelist = [
+  'http://localhost:3000',
   'https://victoralvess.github.io'
 ];
-
-if (process.env.NODE_ENV === 'development') {
-  corsWhitelist.push('http://localhost:3000');
-}
 
 app.use(
   cors({
