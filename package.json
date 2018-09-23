@@ -7,7 +7,7 @@
   "now": {
     "alias": "desafio-estagio",
     "scale": {
-      "gru1": {
+      "iad1": {
         "min": 1,
         "max": 1
       }
