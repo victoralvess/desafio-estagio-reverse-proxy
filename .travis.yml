@@ -12,3 +12,5 @@ deploy:
     skip_cleanup: true
     on:
       master: true
+after_deploy:
+  - pm2 start index.js
