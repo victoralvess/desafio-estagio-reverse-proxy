@@ -3,11 +3,10 @@ node_js:
   - "node"
 cache:
   directories:
-    - "node_modules"
-before_install:
-  - npm install pm2 -g
+    - "node_modules" 
 before_deploy:
   - npm install now --no-save
+  - npm install pm2 --save
 deploy:
   - provider: script
     script: now --token $NOW_TOKEN --public && now alias --token $NOW_TOKEN && now scale desafio-estagio.now.sh 1 --token $NOW_TOKEN
